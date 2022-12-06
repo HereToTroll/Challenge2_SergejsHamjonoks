@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+hmtl {
+  scroll-behavior:smooth;
+}
 
 body {
   margin: 0;
