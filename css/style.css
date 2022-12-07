@@ -35,12 +35,12 @@ a {
 a:visited{
   color: #92CCCD;
 }
-.wrapper {
+.wrapper {   /* Creating grid structure. (Should've added more columns for easier grid items manipulation) */
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: 100px 200px repeat(2, auto) 100px; 
-  grid-template-areas: 
+  grid-template-areas:  
   "hd hd hd"
   "bg bg bg"
   "about cnt avatar"
@@ -49,27 +49,23 @@ a:visited{
 }
 
 .header {
-  /* position: sticky;  
-  /* top: 0; */
   grid-area: hd;
-  margin-top: 5px;
+  margin-top: 5px;     
   grid-column-start: 1;
   grid-column-end: 4;
-  background-color: #31343D;
-  /* justify-content: space-between; */
-  /* display: flex; */
+  background-color: #31343D; /* Just some background from project preview gif we had */
 }
 
 
 .header h2{
   /* display: inline-block; */
-  background-color: #92CCCD;
+  background-color: #92CCCD; /* Backround for heading */
   font-size: 40px;
   float:left;
   margin-top: 20px;
-  padding-left: 60px;
+  padding-left: 60px; /* Added padding to make backround expand h2 box to the left and to make it have background-color desired. */
   padding-right: 10px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif; 
   /* float:left; */
   
 }
@@ -81,10 +77,10 @@ a:visited{
   margin-bottom: 20px;
 }
 .navigation ul > li {
-  display:inline-block;
+  display:inline-block;   /* Menu elements to follow each other vertically. Not sure if it would be better to use inline-flex */
   color:#92CCCD;
-  text-decoration: underline;
-  text-decoration-color: #92CCCD;
+  text-decoration: underline;   /* Added underline like on preview gif */
+  text-decoration-color: #92CCCD;   
   text-decoration-thickness: 3px;
   text-underline-offset: 7px;
   font-size: 30px;
@@ -94,7 +90,7 @@ a:visited{
 .bg-pic {
   grid-area: bg;
   background-image: url("../images/02-hero-bg.jpg");
-  background-size: cover;
+  background-size: cover; 
   grid-row: 2/3;
   display:grid;
 }
@@ -123,16 +119,16 @@ a:visited{
   justify-self: flex-end;
   margin-right: 50px;
   text-align: right;
-  line-height:35pt;
+  line-height:35pt;   /* reduced gap between words */
 }
 .content {
   display: grid;
   grid-area:cnt;
   margin-top: 50px;
   padding-left: 20px;
-  border-left-style: solid;
+  border-left-style: solid; /* Added one line border */
   border-left-width: 5px;
-  border-left-color: #445876;
+  border-left-color: #445876;  
   align-items: center;
 }
 
@@ -160,7 +156,7 @@ a:visited{
   margin-right: 60px;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 50%;  /* made picture round */
   border: 5px solid #445876;
 
 }
@@ -169,7 +165,7 @@ a:visited{
   display: grid;
   margin-top: 50px;
   padding-left: 20px;
-  border-left-style: solid;
+  border-left-style: solid;   /* Added one line border */
   border-left-width: 5px;
   border-left-color: #445876;
   align-items: center;
@@ -181,6 +177,7 @@ a:visited{
 #first_project {
   font-size: 30px;
 }
+
 #last-project {
   background-image: url("/images/02-portfolio-1.jpg");
   background-size: cover; 
@@ -271,6 +268,7 @@ a:visited{
 }
 
 
+
 .contact {
   grid-area: contact;
 }
@@ -299,7 +297,7 @@ a:visited{
 }
 
 .footer ul > li {
-  display:inline-flex;
+  display:inline-flex;  
   font-size: 25px;
   margin-right:15%;
 }
@@ -310,7 +308,7 @@ a:visited{
   text-decoration: none;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:768px) { /* Changing layout to one column for smaller resolution devices */ 
   .wrapper{
     display: grid;
     grid-template-columns: 1fr;
