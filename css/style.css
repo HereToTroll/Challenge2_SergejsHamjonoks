@@ -187,7 +187,7 @@ a {
 .big-project {
   display: flex;
   align-items: center;
-  color: crimson; 
+  color: #92CCCD; 
   font-size: 30px;
   font-weight: bold;
   width: calc(100% - 60px);
