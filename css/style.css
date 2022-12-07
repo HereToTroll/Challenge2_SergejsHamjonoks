@@ -181,13 +181,22 @@ a:visited{
 #first_project {
   font-size: 30px;
 }
+.works-container {
+  /* float:left; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  display: inline-flex;
+  margin-right: 60px;
+  gap:20px;
+}
 .works-container a {
   display: inline-flex;
   height: 200px;
   width: 49%; 
   flex-basis: 50%;
-  /* object-fit: fill;Ы */
+  /* object-fit: fill; */
 }
+
 
 #project2 {
   background-image: url("/images/02-portfolio-2.jpg");
