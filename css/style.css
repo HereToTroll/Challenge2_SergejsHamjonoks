@@ -181,6 +181,29 @@ a:visited{
 #first_project {
   font-size: 30px;
 }
+#last-project {
+  background-image: url("/images/02-portfolio-1.jpg");
+  background-size: cover; 
+}
+
+.big-project {
+  display: flex;
+  align-items: center;
+  color: crimson; 
+  font-size: 30px;
+  font-weight: bold;
+  width: calc(100% - 60px);
+  height: 600px;
+  margin-right: 60px;
+  margin-bottom: 15px;
+  border: 5px solid #92CCCD;
+  filter: brightness(50%);
+}
+
+.big-project:hover {
+  filter: brightness(100%);
+}
+
 .works-container {
   /* float:left; */
   /* display: flex; */
@@ -194,9 +217,8 @@ a:visited{
   height: 200px;
   width: 49%; 
   flex-basis: 50%;
-  /* object-fit: fill; */
+  /* object-fit: fill;Ы */
 }
-
 
 #project2 {
   background-image: url("/images/02-portfolio-2.jpg");
@@ -247,7 +269,6 @@ a:visited{
 .project:hover {
   filter: brightness(100%); /* brighten image on hoover */ 
 }
-
 
 
 .contact {
