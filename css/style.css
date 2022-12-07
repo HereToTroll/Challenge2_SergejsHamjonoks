@@ -179,7 +179,7 @@ a:visited{
 }
 
 #last-project {
-  background-image: url("/images/02-portfolio-1.jpg");
+  background-image: url("./images/02-portfolio-1.jpg");
   background-size: cover; 
 }
 
@@ -218,20 +218,20 @@ a:visited{
 }
 
 #project2 {
-  background-image: url("/images/02-portfolio-2.jpg");
+  background-image: url("./images/02-portfolio-2.jpg");
   background-size:cover;  /* image can look ugly without this option because of the size */
 }
 #project3 {
-  background-image: url("/images/02-portfolio-3.jpg");
+  background-image: url("./images/02-portfolio-3.jpg");
   background-size:cover;
 
 }
 #project4 {
-  background-image: url("/images/02-portfolio-4.jpg");
+  background-image: url("./images/02-portfolio-4.jpg");
   background-size:cover;
 }
 #project5 {
-  background-image: url("/images/02-run-buddy.jpg");
+  background-image: url("./images/02-run-buddy.jpg");
   background-size:cover;
 
 }
