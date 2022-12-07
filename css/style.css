@@ -190,6 +190,7 @@ a {
   color: #92CCCD; 
   font-size: 30px;
   font-weight: bold;
+  text-decoration: none;
   width: calc(100% - 60px);
   height: 600px;
   margin-right: 60px;
