@@ -86,7 +86,9 @@ a:visited{
   font-size: 30px;
   margin-right: 10px;
 }
-
+.navigation ul > li > a {
+  text-decoration: none;
+}
 .bg-pic {
   grid-area: bg;
   background-image: url("../images/02-hero-bg.jpg");
