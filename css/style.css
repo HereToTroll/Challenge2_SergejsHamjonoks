@@ -176,8 +176,18 @@ a:visited{
 #first_project {
   font-size: 30px;
 }
-.big-project {
 
+#last-project {
+  background-image: url("/images/02-portfolio-1.jpg");
+  background-size: cover; 
+}
+
+.big-project {
+  display: flex;
+  align-items: center;
+  color: crimson; 
+  font-size: 30px;
+  font-weight: bold;
   width: calc(100% - 60px);
   height: 600px;
   margin-right: 60px;
@@ -205,6 +215,42 @@ a:visited{
   flex-basis: 50%;
   /* object-fit: fill;Ы */
 }
+
+#project2 {
+  background-image: url("/images/02-portfolio-2.jpg");
+  background-size:cover;  /* image can look ugly without this option because of the size */
+}
+#project3 {
+  background-image: url("/images/02-portfolio-3.jpg");
+  background-size:cover;
+
+}
+#project4 {
+  background-image: url("/images/02-portfolio-4.jpg");
+  background-size:cover;
+}
+#project5 {
+  background-image: url("/images/02-run-buddy.jpg");
+  background-size:cover;
+
+}
+
+.project_link  {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  filter: brightness(50%);   /* make picture look less bright like in demo gif (to enoucrage hoover?)  */
+  /* object-fit: scale-down; */
+  border: 5px solid #92CCCD;  /* border for pictures */ 
+  align-items: center;
+  color: #92CCCD; 
+}
+.project_link a {
+  background-color: aqua;
+}
+.project_link:hover{
+  filter: brightness(100%); 
+}
 .project {
   height: 200px;
   width:100%; /* image to take entire parent container width. */
@@ -213,7 +259,6 @@ a:visited{
   object-fit: fill;
   border: 5px solid #92CCCD;  /* border for pictures */ 
   filter: brightness(50%);   /* make picture look less bright like in demo gif (to enoucrage hoover?)  */
-  object-fit: fill;
   /* margin-bottom: 15px; */
 }
 
